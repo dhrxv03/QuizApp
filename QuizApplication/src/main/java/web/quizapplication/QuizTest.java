@@ -12,7 +12,7 @@ import javax.swing.JRadioButton;
 public class QuizTest extends JFrame implements ActionListener {
 
     JLabel label;
-    JRadioButton radioButtons[] = newJRadioButton[5];
+    JRadioButton radioButtons[] = new JRadioButton[5];
     JButton btnNext, btnResult;
     ButtonGroup bg;
     int count = 0, current = 0, x = 1, y = 1, now = 0;
@@ -20,6 +20,7 @@ public class QuizTest extends JFrame implements ActionListener {
 
     QuizTest(String s) {
         super(s);
+        label = new JLabel();
         add(label);
         bg = new ButtonGroup();
         for (int i = 0; i < 5; i++) {
