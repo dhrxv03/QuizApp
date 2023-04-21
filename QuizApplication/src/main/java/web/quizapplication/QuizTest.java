@@ -11,7 +11,8 @@ import javax.swing.JRadioButton;
 
 public class QuizTest extends JFrame implements ActionListener {
 
-    JLabel label;
+    private static final long serialVersionUID = 1L;
+	JLabel label;
     JRadioButton radioButtons[] = new JRadioButton[5];
     JButton btnNext, btnResult;
     ButtonGroup bg;
@@ -37,11 +38,11 @@ public class QuizTest extends JFrame implements ActionListener {
         add(btnResult);
         setData();
         label.setBounds(30, 40, 450, 20);
-        radioButtons[0].setBounds(50, 80, 110, 20);
+        radioButtons[0].setBounds(50, 80, 450, 20);
         radioButtons[1].setBounds(50, 110, 200, 20);
         radioButtons[2].setBounds(50, 140, 200, 20);
         radioButtons[3].setBounds(50, 170, 200, 20);
-        btnNext.setBounds(100, 240, 100, 300);
+        btnNext.setBounds(100, 240, 100, 30);
         btnResult.setBounds(270, 240, 100, 30);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(null);
