@@ -1,3 +1,7 @@
+/**
+ * @author dhruvshah
+ *
+ */
 package web.quizapplication;
 
 import java.awt.event.ActionEvent;
@@ -55,67 +59,67 @@ public class QuizTest extends JFrame implements ActionListener {
     void setData() {
         radioButtons[4].setSelected(true);
         if (current == 0) {
-            label.setText("Q1 What is the size of boolean variable ?");
+            label.setText("Q1 How many Bits makes one Byte ?");
             radioButtons[0].setText("8 bit");
             radioButtons[1].setText("16 bit");
             radioButtons[2].setText("32 bit");
-            radioButtons[3].setText("Not known");
+            radioButtons[3].setText("1024 bit");
         }
         if (current == 1) {
-            label.setText("Q2 What is the default value of long variable ?");
-            radioButtons[0].setText("0");
-            radioButtons[1].setText("0.0");
-            radioButtons[2].setText("0L");
-            radioButtons[3].setText("Not known");
+            label.setText("Q2 Which of the following is a Search Engine ?");
+            radioButtons[0].setText("Microsoft Edge");
+            radioButtons[1].setText("Mozilla Firefox");
+            radioButtons[2].setText("Google");
+            radioButtons[3].setText("Internet Explorer");
         }
         if (current == 2) {
-            label.setText("Q3 What is the default value of boolean variable ?");
-            radioButtons[0].setText("True");
-            radioButtons[1].setText("False");
-            radioButtons[2].setText("Null");
-            radioButtons[3].setText("Not known");
+            label.setText("Q3 What is the full form of RAM? ");
+            radioButtons[0].setText("Random Access Memory");
+            radioButtons[1].setText("Read Access Memory");
+            radioButtons[2].setText("Run Access Memory");
+            radioButtons[3].setText("None of the Above");
         }
         if (current == 3) {
-            label.setText("Q4 What kind of variables a class consists of?");
-            radioButtons[0].setText("Class Variables, Instance Variables");
-            radioButtons[0].setText("Class Variables, Local Variables, Instance Variables");
-            radioButtons[2].setText("Class Variables");
-            radioButtons[3].setText("Class Variables, Local Variables");
+            label.setText("Q4 IC chips used in computers are usually made of :");
+            radioButtons[0].setText("Lead");
+            radioButtons[1].setText("Silicon");
+            radioButtons[2].setText("Chromium");
+            radioButtons[3].setText("Gold");
         }
         if (current == 4) {
-            label.setText("Q5 What is Function Overloading?");
-            radioButtons[0].setText("Methods with same name but different parameters");
-            radioButtons[1].setText("Methods with same name but different return types");
-            radioButtons[2].setText("Methods with same name, same parameters but different parameter names");
-            radioButtons[3].setText("None of the above");
+            label.setText("Q5 Which of the following is not an example of an Operating System ?");
+            radioButtons[0].setText("Windows 98");
+            radioButtons[1].setText("macOS");
+            radioButtons[2].setText("Microsoft Office");
+            radioButtons[3].setText("Red Hat Linux");
         }
         if (current == 5) {
-            label.setText("Q6 What is Serialization?");
-            radioButtons[0].setText("Serialization is the process of writing the state of an object to another object");
-            radioButtons[1].setText("Serialization is the process of writing the state of an object to a byte stream");
-            radioButtons[2].setText("Both of the above");
+            label.setText("Q6 Which of the following is used to manage Database ?");
+            radioButtons[0].setText("Operating System");
+            radioButtons[1].setText("DBMS");
+            radioButtons[2].setText("Compiler");
             radioButtons[3].setText("None of the above");
         }
         if (current == 6) {
-            label.setText("Q7 Which of the following is a thread safe?");
-            radioButtons[0].setText("StringBuilder");
-            radioButtons[1].setText("StringBuffer");
-            radioButtons[2].setText("Both of the above");
-            radioButtons[3].setText("None of the above");
+            label.setText("Q7 Who invented Java Programming ?");
+            radioButtons[0].setText("Guido van Rossum");
+            radioButtons[1].setText("Bjarne Stroustrup");
+            radioButtons[2].setText("Dennis Ritchie");
+            radioButtons[3].setText("James Gosling");
         }
         if (current == 7) {
-            label.setText("Q8 What is the size of boolean variable ?");
-            radioButtons[0].setText("8 bit");
-            radioButtons[1].setText("16 bit");
-            radioButtons[2].setText("32 bit");
-            radioButtons[3].setText("Not known");
+            label.setText("Q8 Which computer language is written in binary codes only ?");
+            radioButtons[0].setText("Pascal");
+            radioButtons[1].setText("C");
+            radioButtons[2].setText("Assembly Language");
+            radioButtons[3].setText("C++");
         }
         if (current == 8) {
-            label.setText("Q9 Arrays in java are-");
-            radioButtons[0].setText("Object Refrences");
-            radioButtons[1].setText("Primitive Data type");
-            radioButtons[2].setText("Object");
-            radioButtons[3].setText("None");
+            label.setText("Q9 Which Language is used to make webpages?");
+            radioButtons[0].setText("C++");
+            radioButtons[1].setText("Assembly");
+            radioButtons[2].setText("R");
+            radioButtons[3].setText("HTML");
         }
         if (current == 9) {
             label.setText("Q10 which is the official language for Android Development ?");
@@ -132,34 +136,34 @@ public class QuizTest extends JFrame implements ActionListener {
     
     boolean checkAns(){
         if(current==0){
-            return (radioButtons[1].isSelected());
+            return (radioButtons[0].isSelected());
         }
         if(current==1){
             return (radioButtons[2].isSelected());
         }
         if(current==2){
-            return (radioButtons[1].isSelected());
+            return (radioButtons[0].isSelected());
         }
         if(current==3){
             return (radioButtons[1].isSelected());
         }
         if(current==4){
-            return (radioButtons[0].isSelected());
+            return (radioButtons[2].isSelected());
         }
         if(current==5){
             return (radioButtons[1].isSelected());
         }
         if(current==6){
-            return (radioButtons[1].isSelected());
+            return (radioButtons[3].isSelected());
         }
         if(current==7){
-            return (radioButtons[1].isSelected());
-        }
-        if(current==8){
             return (radioButtons[2].isSelected());
         }
+        if(current==8){
+            return (radioButtons[3].isSelected());
+        }
         if(current==9){
-            return (radioButtons[0].isSelected());
+            return (radioButtons[1].isSelected());
         }
     return false;
 }
